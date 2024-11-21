@@ -6,8 +6,8 @@ Smart Printing Service for students in HCMUT
 
 | Directory            | Description                               |
 | -------------------- | ----------------------------------------- |
-| Requirement          |                                           |
-| System modelling     |                                           |
-| Architectural design |                                           |
+|      docs     |                Documents of the project                          |
+|      |                                           |
+| |                                           |
 
 For more information, please refer to the README.md in each directory.
