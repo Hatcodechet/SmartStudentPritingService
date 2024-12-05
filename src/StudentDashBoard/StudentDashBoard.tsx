@@ -8,7 +8,7 @@ import CurrentOrders from "./currentOrder";
 import NearbyOrder from "./NearbyOrder";
 import PrinterList from "./PrinterList";
 import styled from "styled-components";
-
+import Navbar from "../components/Navbar";
 const Section = styled.div`
   height: 150vh;
   scroll-snap-align: center;
@@ -59,7 +59,7 @@ const Left = styled.div`
 const StudentDashBoard: React.FC = () => {
   return (
     <Section>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <Maintext>
         <SideBar />

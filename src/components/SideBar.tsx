@@ -72,6 +72,9 @@ const Sidebar: React.FC = () => {
             <li className="m-3">
               <Link to="/">Trang chủ</Link>
             </li>
+            <li className="m-3">
+              <Link to="/student-dashboard">Bảng thông tin</Link>
+            </li>
             <li tabIndex={0} className="m-3">
               <details>
                 <summary>Dịch vụ</summary>
