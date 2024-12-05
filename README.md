@@ -21,4 +21,12 @@ The Smart Printing Service for Students project is designed to provide an effici
 | 4   | Trần Đăng Khoa  | 2252363    |
 | 5   | Trần Hoàng Minh Quân   |  2053380    |
 
+
+## How to Contribute
+1. Clone the repository.
+2. Create a branch for your changes.
+3. Commit changes with meaningful messages.
+4. Submit a pull request for review.
+
+
 For more information, please refer to the README.md in each directory.
