@@ -8,7 +8,8 @@ The Smart Printing Service for Students project is designed to provide an effici
 | Directory            | Description                               |
 | -------------------- | ----------------------------------------- |
 |      docs     |                Documents of the project                          |
-|      |                                           |
+|      src     |                source code of the project                          |
+|              |                                           |
 | |                                           |
 
 ## 🙋‍♂️ Contributors
