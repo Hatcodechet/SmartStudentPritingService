@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
               <div className="w-10 rounded-full">
                 <img
                   alt="Avatar"
-                  src="https://i1.sndcdn.com/artworks-G0XZmnzGNxLfoZx2-s2zyrw-t500x500.jpg"
+                  src="https://www.shutterstock.com/image-vector/vector-flat-illustration-grayscale-avatar-600nw-2281862025.jpg"
                 />
               </div>
             </label>
