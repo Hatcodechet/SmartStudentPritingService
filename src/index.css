@@ -9,7 +9,7 @@
 */
 
 
-.custom-btn {
+/* .custom-btn {
     @apply w-[130px] h-10 text-white font-medium cursor-pointer transition-all duration-[0.3s] ease-[ease] relative inline-block shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5),7px_7px_20px_0px_rgba(0,0,0,0.1),4px_4px_5px_0px_rgba(0,0,0,0.1)] px-[25px] py-2.5 rounded-[5px];
     font-family: "Lato", sans-serif;
     background: transparent;
@@ -39,5 +39,5 @@
   .btn-3 span:after {
     @apply absolute content-[""] transition-all duration-[0.3s] ease-[ease] left-0 bottom-0;
     background: rgba(2, 126, 251, 1);
-  }
+  } */
   

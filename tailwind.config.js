@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "Dancing-Script": ['Dancing Script', 'sans-serif']
+    }
+    },
   },
   plugins: [require("daisyui")],
 }
