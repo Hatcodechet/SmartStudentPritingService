@@ -43,7 +43,7 @@ const Sidebar: React.FC = () => {
                 <Link to="/">Trang chủ</Link>
               </li>
               <li className="m-3">
-                <Link to="/student-dashboard">Bảng thông tin</Link>
+                <Link to="/student-dashboard">Bảng điều khiển</Link>
               </li>
               <li className="m-3">
                 <summary>Dịch vụ</summary>
@@ -81,9 +81,16 @@ const Sidebar: React.FC = () => {
             <li className="m-3">
               <Link to="/">Trang chủ</Link>
             </li>
-            <li className="m-3">
-              <Link to="/student-dashboard">Bảng thông tin</Link>
-            </li>
+            {user?.role === "admin" || !user ? (
+              <li className="m-3">
+                <Link to="/admin-dashboard">Bảng điều khiển</Link>
+              </li>
+            ) : (
+              <li className="m-3">
+                <Link to="/student-dashboard">Bảng điều khiển</Link>
+              </li>
+            )}
+
             <li tabIndex={0} className="m-3">
               <details>
                 <summary>Dịch vụ</summary>

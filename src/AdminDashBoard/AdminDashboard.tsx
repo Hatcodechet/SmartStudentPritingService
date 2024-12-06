@@ -43,7 +43,7 @@ const Left = styled.div`
   flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 20px;
   padding-left: 20px;
   @media only screen and (max-width: 768px) {
@@ -60,7 +60,7 @@ const AdminDashBoard: React.FC = () => {
         <SideBar />
         <Container>
           <Left>
-          <PrinterList/>
+            <PrinterList />
             {/* <div className=" flex flex-col w-full"> */}
             {/* </div> */}
           </Left>
