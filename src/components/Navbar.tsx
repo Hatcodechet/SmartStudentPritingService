@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import Logo from '../../public/favicon.ico';
+import Logo from "../../public/favicon.ico";
 import React from "react";
 const Navbar: React.FC = () => {
   const { user, logout } = useAuth();
-  
+
   return (
     <div className="min-h-[4rem] items-center flex flex-row justify-between w-full bg-white border border-b-slate-200">
-      <div className="flex flex-row h-full justify-around items-center w-[14rem] border border-e-slate-200">
+      <Link
+        to="/"
+        className="flex flex-row h-full justify-around items-center w-[14rem] border border-e-slate-200"
+      >
         <img src={Logo} alt="Bach Khoa Logo" />
-        <p className="text-[0.8rem]  font-medium text-center">Ho Chi Minh University of Technology</p>
-      </div>
-      <p className="text-[2rem]  font-Dancing-Script font-bold text-blue-400">Student Smart Printing Service</p>
+        <p className="text-[0.8rem]  font-medium text-center">
+          Ho Chi Minh University of Technology
+        </p>
+      </Link>
+      <p className="text-[2rem]  font-Dancing-Script font-bold text-blue-400">
+        Student Smart Printing Service
+      </p>
       <div className="pr-5">
         {user ? (
           <div className="dropdown dropdown-end">
@@ -19,7 +26,7 @@ const Navbar: React.FC = () => {
               <div className="w-10 rounded-full">
                 <img
                   alt="Avatar"
-                  src="https://i1.sndcdn.com/artworks-G0XZmnzGNxLfoZx2-s2zyrw-t500x500.jpg"
+                  src="https://www.shutterstock.com/image-vector/vector-flat-illustration-grayscale-avatar-600nw-2281862025.jpg"
                 />
               </div>
             </label>

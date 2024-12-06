@@ -7,7 +7,7 @@ const Sidebar: React.FC = () => {
   const handleLogout = async () => {
     await logout();
     navigate("/");
-  }
+  };
   return (
     <div
       className="d-flex flex-column align-seft-start h-full align-items-start"
@@ -43,6 +43,9 @@ const Sidebar: React.FC = () => {
                 <Link to="/">Trang chủ</Link>
               </li>
               <li className="m-3">
+                <Link to="/student-dashboard">Bảng thông tin</Link>
+              </li>
+              <li className="m-3">
                 <summary>Dịch vụ</summary>
                 <ul className="p-2 z-50 text-black">
                   <li>
@@ -76,7 +79,10 @@ const Sidebar: React.FC = () => {
         <div className="navbar-center hidden lg:flex text-white text-lg">
           <ul className=" px-1 menu menu-vertical">
             <li className="m-3">
-              <Link to="/">Trang chủ</Link> 
+              <Link to="/">Trang chủ</Link>
+            </li>
+            <li className="m-3">
+              <Link to="/student-dashboard">Bảng thông tin</Link>
             </li>
             <li tabIndex={0} className="m-3">
               <details>
@@ -108,9 +114,7 @@ const Sidebar: React.FC = () => {
             </li>
             {user && (
               <li className="m-3">
-                  <button onClick={handleLogout}>
-                    Đăng xuất
-                  </button>
+                <button onClick={handleLogout}>Đăng xuất</button>
               </li>
             )}
           </ul>
