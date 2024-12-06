@@ -5,6 +5,7 @@ import Manage from './pages/Manage'
 import LoginPage from "./pages/Login"
 import About from "./pages/About"
 import Page404 from './pages/404';
+import AdminDashBoard from "./AdminDashBoard/AdminDashboard"
 import StudentDashBoard from "./StudentDashBoard/StudentDashBoard"
 
 const Flag: React.FC = () => {
@@ -18,12 +19,13 @@ const App: React.FC = () => {
   const location = useLocation();
 
   return (
-      <div className="flex flex-col min-h-screen min-w-screen bg-[#F2F0F0]">
+      <div className="flex flex-col min-h-screen min-w-screen bg-white">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/printing" element={<Printing key={location.key} />} /> 
           <Route path="/services/management" element={<Manage/>} /> 
           <Route path="/student-dashboard" element={<StudentDashBoard />} />
+          <Route path="/admin-dashboard" element={<AdminDashBoard/>}/>
           <Route path="/about" element={<About />} /> 
           <Route path="/login" element={<LoginPage/>} /> 
           <Route path="/flag" element={<Flag />} /> 

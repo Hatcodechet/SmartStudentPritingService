@@ -70,9 +70,9 @@ const StudentDashBoard: React.FC = () => {
 
             <div className="grid grid-cols-3 gap-10 h-full p-6 ">
               <div className="col-span-2 flex flex-col space-y-5">
-                <Cards />
+                
                 <StatisticsChart />
-                <NearbyOrder />
+
               </div>
               <div className="col-span-1 flex flex-col space-y-5">
                 <CurrentOrders />

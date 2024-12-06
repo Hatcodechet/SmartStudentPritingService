@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import Logo from '../../public/favicon.ico';
+import React from "react";
 const Navbar: React.FC = () => {
   const { user, logout } = useAuth();
   
   return (
-    <div className="min-h-[4rem] items-center flex flex-row justify-between w-full bg-white">
-      <div className="flex flex-row h-full justify-around items-center w-[14rem] border border-r-slate-200">
+    <div className="min-h-[4rem] items-center flex flex-row justify-between w-full bg-white border border-b-slate-200">
+      <div className="flex flex-row h-full justify-around items-center w-[14rem] border border-e-slate-200">
         <img src={Logo} alt="Bach Khoa Logo" />
         <p className="text-[0.8rem]  font-medium text-center">Ho Chi Minh University of Technology</p>
       </div>

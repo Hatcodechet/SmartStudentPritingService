@@ -30,7 +30,7 @@ const StatisticsChart: React.FC = () => {
 
     return (
         <div className="p-4 rounded-lg border  border-slate-200">
-            <h2 className="text-lg font-bold mb-4">Thống kê</h2>
+            <h2 className="text-lg text-black font-bold mb-4">Thống kê</h2>
             <Line data={chartData} options={options} />
         </div>
     );

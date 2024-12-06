@@ -1,7 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import React from "react";
 import { useAuth } from "../context/AuthContext";
 const Sidebar: React.FC = () => {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    await logout();
+    navigate("/");
+  }
   return (
     <div
       className="d-flex flex-column align-seft-start h-full align-items-start"
@@ -100,6 +106,13 @@ const Sidebar: React.FC = () => {
             <li className="m-3">
               <Link to="/about">Giới thiệu</Link>
             </li>
+            {user && (
+              <li className="m-3">
+                  <button onClick={handleLogout}>
+                    Đăng xuất
+                  </button>
+              </li>
+            )}
           </ul>
         </div>
         {/* <div className="navbar-end">

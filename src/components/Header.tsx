@@ -4,12 +4,17 @@ import { IoDiamondOutline, IoAdd } from "react-icons/io5";
 // import CreatePrintJob from "../PopUpManage/CreatePrintJob";
 import { useNavigate } from "react-router-dom";
 import Logo from '../../public/favicon.ico';
+import { useAuth } from "../context/AuthContext";
+import React from "react";
 const Header: React.FC = () => {
   const navigate = useNavigate();
   const handlePrinting = () => {
     navigate("/services/printing");
   };
-
+  const handleManagement = () => {
+    navigate("/services/management");
+  };
+  const { user } = useAuth();
   return (
     <>
       <header className="min-h-[5rem] flex items-center justify-between w-full border-b border-slate-300">
@@ -29,10 +34,16 @@ const Header: React.FC = () => {
           />
         </div>
         <div className="flex space-x-4 pr-5">
-          <button className="font-medium text-blue-500 bg-blue-100 hover:bg-blue-300 rounded-md py-2 px-1 items-center flex gap-x-3  ">
-            <IoDiamondOutline />
-            Thêm số dư
-          </button>
+          {user && user.role === 'student' ? (
+              null
+            ) : (
+              <button 
+                onClick = {handleManagement}
+                className="font-medium text-blue-500 bg-blue-100 hover:bg-blue-300 rounded-md py-2 px-1 items-center flex gap-x-3">
+                <IoDiamondOutline />
+                Quản lý lệnh in
+              </button>
+            )}
           <button
             onClick={handlePrinting}
             className="font-medium bg-blue-500 hover:bg-blue-300 text-white rounded-md py-2 px-1 flex items-center gap-x-3"

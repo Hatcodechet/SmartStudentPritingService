@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-
+import React from 'react';
 const LoginPage: React.FC = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -44,7 +44,7 @@ const LoginPage: React.FC = () => {
             variant="contained"
             onClick={() => {
               login('admin'); // Update the auth state
-              navigate('/'); // Navigate to admin-related page
+              navigate('/admin-dashboard'); // Navigate to admin-related page
             }}
             sx={{
               width: { xs: 300, sm: 500 },
