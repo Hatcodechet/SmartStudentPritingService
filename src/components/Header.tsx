@@ -48,7 +48,7 @@ const Header: React.FC = () => {
               className="font-medium text-blue-500 bg-blue-100 hover:bg-blue-300 rounded-md py-2 px-1 items-center flex gap-x-3"
             >
               <IoDiamondOutline />
-              Quản lý lệnh in
+              Quản lý máy in
             </button>
           )}
           <button
