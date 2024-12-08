@@ -41,7 +41,7 @@ const PrinterList: React.FC = () => {
                 <span className={`inline-block px-2 py-1 text-sm font-semibold rounded ${
                   printer.isAvailable ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
                 }`}>
-                  {printer.isAvailable ? 'Available' : 'Unavailable'}
+                  {printer.isAvailable ? 'Khả dụng' : 'Không khả dụng'}
                 </span>
               </div>
             </li>
