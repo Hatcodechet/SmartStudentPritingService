@@ -16,7 +16,7 @@ const PrinterList: React.FC = () => {
               <p className="text-gray-500 text-sm">{printer.location}</p>
               <p className="text-gray-500 text-sm">{printer.brand}</p>
               <p className={`text-sm ${printer.isAvailable ? 'text-gray-500' : 'text-red-500'}`}>
-                {printer.isAvailable ? 'Available' : 'Not Available'}
+                {printer.isAvailable ? 'Khả dụng' : 'Không khả dụng'}
               </p>
             </div>
             
