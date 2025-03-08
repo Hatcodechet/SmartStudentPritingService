@@ -12,14 +12,7 @@ The Smart Printing Service for Students project is designed to provide an effici
 |              |                                           |
 | |                                           |
 
-## 🙋‍♂️ Contributors
-| No. | Full name          | Student ID |
-| --- | ------------------ | ---------- |
-| 1   | Phạm Nguyễn Viết Trí    | 2252845    |
-| 2   | Phan Phước Hưng         | 2252282    |
-| 3   | Trần Gia Huy      |  2252264    |
-| 4   | Trần Đăng Khoa  | 2252363    |
-| 5   | Trần Hoàng Minh Quân   |  2053380    |
+
 
 
 ## How to Contribute
